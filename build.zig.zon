@@ -1,0 +1,20 @@
+.{
+    .name = "picozigtest",
+    .version = "0.0.0",
+    .minimum_zig_version = "0.13.0",
+    .dependencies = .{
+        .@"microzig/build" = .{
+            .url = "https://microzig.tech/downloads/microzig/0.13.0/build.tar.gz",
+            .hash = "1220cefc43590f4cd5277533a9d0bf6e7d93b515f6687d4310b78ca828dec549fc5b",
+        },
+        .@"microzig/port/raspberrypi/rp2xxx" = .{
+            .url = "https://microzig.tech/downloads/microzig/0.13.0/port/raspberrypi/rp2xxx.tar.gz",
+            .hash = "1220d61b6e96d7a9cd44b7aef99321cc4e6e50f532185aab1184088399276ded0449",
+        },
+    },
+    .paths = .{
+        "build.zig",
+        "build.zig.zon",
+        "src",
+    },
+}
